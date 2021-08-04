@@ -6,17 +6,16 @@ import {
   Carousel,
   Container,
   Logo,
-  Map,
   Search,
   Wrapper,
 } from "./styles";
-import { Card, Modal, RestauranteCard } from "../../components";
+import { Card, Map, Modal, RestauranteCard } from "../../components";
 import logo from "../../assets/logo.svg";
 import restaurante from "../../assets/restaurante-fake.png";
 
 const Home = () => {
   const [search, setSearch] = useState<string>("");
-  const [modalOpened, setModalOpened] = useState(true);
+  const [modalOpened, setModalOpened] = useState(false);
   const handleChange = (event: string) => setSearch(event);
 
   const settings = {
