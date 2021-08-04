@@ -21,7 +21,7 @@ export const MapContainer = ({ google }: IProps) => {
       }
     });
   }
-
+ 
   function onMapReady(mapProps: any, map: any) {
     setMap(map);
     searchNearby(map, map.center);
